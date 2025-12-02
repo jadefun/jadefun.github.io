@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340.99 110.02">
+  <defs>
+    <style>
+      @font-face {
+      font-family: 'Acidic';
+      src: url('/fonts/Acidic.TTF');
+      }
+
+      @font-face {
+        font-family: 'ACIDLABEL';
+        src: url('/fonts/ACIDL.otf');
+      }
+
+      .cls-1 {
+        font-family: Acidic, Acidic;
+        font-size: 24px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #e6e6e6;
+      }
+
+      .cls-2 {
+        font-family: ACIDLABEL, 'ACID LABEL___';
+        font-size: 72px;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(0 64.46)"><tspan x="0" y="0">JadeFun</tspan></text>
+  <text class="cls-1" transform="translate(257 84.33)"><tspan x="0" y="0">dot net</tspan></text>
+</svg>

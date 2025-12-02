@@ -1,0 +1,108 @@
+body {
+    background-color: black;
+    background-image: url("/media/sat.jpg");
+    background-position-x: center;
+    background-size: 1024px;
+    background-repeat: repeat-y;
+    overflow: hidden;
+    color: whitesmoke;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marquee {
+    width: 1024px;
+    overflow: hidden;
+}
+
+.marquee>p {
+    position: relative;
+    animation: marquee 5s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+.banner {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    width: 768px;
+    margin: auto;
+}
+
+.image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    font-size: 20px;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: 1px solid rgb(128, 128, 128);
+    transition: transform 0.2s;
+    background: radial-gradient(100% 100% at center top, rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0) 51%),
+        linear-gradient(rgba(55, 65, 75, 0.75) 50%, rgba(0, 10, 20, 0.75));
+}
+
+button:hover {
+    transform: scale(200%);
+    background: radial-gradient(100% 100% at center top, rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0) 51%),
+        linear-gradient(rgba(55, 65, 75, 1) 50%, rgba(0, 10, 20, 1));
+}
+
+.navbar {
+    width: 98%;
+    margin-top: 100px;
+    border-radius: 25px;
+    border: 1px solid rgb(128, 128, 128);
+    border-top-style: none;
+    /* background: linear-gradient(rgba(200, 200, 200, 0.3) 50%, rgba(155, 155, 155, 0.3)); */
+    background: radial-gradient(100% 100% at center top, rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0) 51%),
+        linear-gradient(rgba(55, 65, 75, 0.75) 50%, rgba(0, 10, 20, 0.75));
+    transition: border-radius 1.5s ease
+}
+
+/* container */
+.right-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* columns */
+.right-sidebar>* {
+    width: 100%;
+}
+
+/* tablet breakpoint */
+@media (min-width:768px) {
+    .right-sidebar>*:nth-child(1) {
+        width: calc(100% / 3 * 2);
+    }
+
+    .right-sidebar>*:nth-child(2) {
+        width: calc(100% / 3);
+    }
+}

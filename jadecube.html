@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>JADECUBE</title>
+  <link href="cube.css" rel="stylesheet">
+  <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@v0.176.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.176.0/examples/jsm/"
+          }
+        }
+    </script>
+</head>
+
+<body>
+  <script type="module" src="/main.js"></script>
+  <div>
+      <object class="banner" data="media/banner2.svg" type="image/svg+xml">
+        <img src="media/bannerfallback.jpg"/>
+      </object>
+      <p style="margin-top: 0px;">THIS IS SO WORK IN PROGRESS PLEASE DONT KILL ME™</p>
+    </div>
+  <div class="cube-container">
+    <div class="cube" id="cubeCSS">
+      <div class="side top">
+        <div class="right-sidebar">
+          <div>
+            <h1>about jade</h1>
+            <p>that's me! hey there freaks i'm a freak like you. i like making videogames, doing photography, and being a weird
+              critter. i'm therian and a member of a system. welcome to my webzone! if you've made it this far,
+              congratulations. i know the cube website is
+              kind of weird, but i really like the gamecube and older nintendo consoles, and i wanted to try making a 3d
+              website.
+              that's where you are now! why don't you look around in the other
+              sections? my paws are getting tired!<br><img src="media/kitty.gif"></p>
+              <button id="topBackButton" class="back-button cool-button">back</button>
+          </div>
+          <div>
+            <img class="profile" src="media/jade.png">
+            <p class="caption">my sona is a housecat with white, medium length fur with light
+              blue spots, freckles, and circular glasses. (comm by owen)</p>
+          </div>
+        </div>
+      </div>
+      <div class="side bottom">
+        <h1>car</h1>
+        <p>this my car evie</p>
+        <img style="height: 300px" src="media/evie.gif">
+          <button id="bottomBackButton" class="back-button cool-button">back</button>
+      </div>
+      <div class="side left">
+        <h1>video games</h1>
+        <p>i like to make video games it is so fun and cool wow i really like them you should play my video games</p>
+        <a href="https://cecthree.itch.io">LITERALLY GAMING</a>
+          <button style="margin-top: 25px;" id="leftBackButton" class="back-button cool-button">back</button>
+      </div>
+      <div class="side right">
+        <h1>photographs</h1>
+        <p>i like to take photos but i do not feel like adding them right now sowwyyyyy</p>
+          <button style="margin-top: 25px;" id="rightBackButton" class="back-button cool-button">back</button>
+      </div>
+      <div class="side front">
+        <button id="topButton" class="front-button-top">top</button>
+        <button id="leftButton" class="front-button-left">left</button>
+        <button id="rightButton" class="front-button-right">right</button>
+        <button id="bottomButton" class="front-button-bottom">bottom</button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <canvas id="canvas"></canvas>
+  </div>
+</body>
+
+</html>
